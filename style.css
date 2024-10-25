@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.card {
+    max-width: 65%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme .card {
+    background-color: #444;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap:5px;
+}
+
+.search input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border 0.3s;
+}
+
+.search input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+button .icon{
+    width: 15px;
+}
+
+.weather {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-icon {
+    width: 100px;
+}
+
+.temp {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col {
+    text-align: center;
+}
+
+.col img {
+    width: 50px;
+}
+
+.forecast {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.forecast-item {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.forecast-item h3{
+    font-size: 1rem;
+}
+
+.forecast-item p{
+    font-size: 0.8rem;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .search {
+        flex-direction: column;
+    }
+
+    .search input {
+        margin-bottom: 10px;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .col {
+        margin-bottom: 10px;
+    }
+}
