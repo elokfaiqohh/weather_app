@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-align: left;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #DBE4EE;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -18,8 +22,13 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background: #81A4CD;
     transition: background-color 0.3s, color 0.3s;
+    box-shadow: 10px 10px 30px 0px #3E7CB1;
+}
+
+.dark-theme .card{
+    box-shadow: 10px 10px 30px 0px #d5d5d52b;
 }
 
 .dark-theme .card {
@@ -36,9 +45,9 @@ body {
 
 .search input {
     flex: 1;
-    padding: 10px;
+    padding: 17px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-right: 10px;
     transition: border 0.3s;
 }
@@ -49,21 +58,32 @@ body {
 }
 
 .search button {
-    background-color: #007bff;
+    background: #054A91E5;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 7px 9px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .search button:hover {
-    background-color: #0056b3;
+    background: #033b74e5;
 }
 
 button .icon{
-    width: 15px;
+    width: 30px;
+}
+
+#theme-toggle{
+    font-size: 25px;
+}
+
+.display-weather{
+    margin: 1rem 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .weather {
@@ -72,17 +92,25 @@ button .icon{
 }
 
 .weather-icon {
-    width: 100px;
+    width: 160px;
 }
 
 .temp {
-    font-size: 48px;
-    margin: 10px 0;
+    font-size: 85px;
+    color: #fff;
+    font-weight: 400;
+    margin: -13px 0;
 }
 
 .city {
-    font-size: 24px;
-    margin: 5px 0;
+    font-size: 30px;
+    margin: 0px 0;
+    text-align: left;
+    color: #054A91;
+}
+
+.dark-theme .city {
+    color: #fff;
 }
 
 .details {
@@ -95,12 +123,31 @@ button .icon{
     text-align: center;
 }
 
+.col h2{
+    font-size: 30px;
+    margin: 0px 0;
+    text-align: left;
+    font-weight: 500;
+    color: #054A91;
+}
+
+.dark-theme .col h2{
+    color: #fff;
+}
+
+.wind, .humidity{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    margin: 10px 0 0;
+}
+
 .col img {
-    width: 50px;
+    width: 60px;
 }
 
 .forecast {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -115,6 +162,10 @@ button .icon{
     max-width: 300px;
     text-align: center;
     transition: background-color 0.3s;
+}
+
+.dark-theme  .forecast{
+    color: black;
 }
 
 .forecast-item h3{
